@@ -1,0 +1,75 @@
+.main_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  color: white;
+  padding-left: 130px;
+  padding-right: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 300px 500px 200px 200px 200px;
+  grid-template-areas: 
+   "HEADER HEADER HEADER"
+    "SECTION SECTION ."
+    " . . DARK";
+    /* DARK-ი ვეღარ დავსვი gridi-თ, რატომღაც. წერტილების გარეშეც ვცადე. */
+   
+
+}
+
+/* header */
+
+header {
+  grid-area: HEADER;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 130px;
+
+  /* ფიგმაში არ ვიცი რა ხდება, ფორმატი შეიცვალა თუ რა...
+  "ახალ" ინსპექტში ვერ ვნახე ჰედერის სიმაღლე. თვალის ზომით განსზაღვრე 100px და ამიტომ
+  დისპლით გავცენტრე h1. */
+}
+
+h1 {
+  color: #000;
+  font-size: 48px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+}
+
+li {
+  color: #484f5e;
+  font-size: 16px;
+  font-family: Inter;
+  line-height: 19px;
+}
+
+
+
+/* section */
+
+section{
+    
+  
+    /* background-color: red; */
+    grid-area: SECTION;
+    /* border: 4px solid black;
+    ეს შავი ბორდერი ფოტოს სრულად ვერ წვდება, ასე ვთქვათ ოთხივე მხრიდან. 
+    რამე პარამეტრი ფოტოსთვის სტილად უნდა დამემატებინა? */
+}
+
+.dark_blue_banner{
+    background-color: black;
+    grid-area: DARK;
+}
+
+
+/* აქ ვჩერდები დროებით */
